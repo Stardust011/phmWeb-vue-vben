@@ -149,6 +149,10 @@ export default {
   setup: {
     page: '引导页',
   },
+  phm: {
+    page: '电梯总况页',
+    detail: '电梯细节展示',
+  },
   system: {
     moduleName: '系统管理',
     account: '账号管理',

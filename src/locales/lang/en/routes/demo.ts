@@ -153,6 +153,10 @@ export default {
   setup: {
     page: 'Intro page',
   },
+  phm: {
+    page: 'Elevator General Information',
+    detail: 'Elevator detail',
+  },
   system: {
     moduleName: 'System management',
 
