@@ -1,0 +1,65 @@
+<template>
+  <div id="container" style="padding: 10px; width: 100%; height: 400px"></div>
+</template>
+
+<script lang="js">
+  import AMapLoader from '@amap/amap-jsapi-loader'
+  import { shallowRef, watch } from 'vue'
+  window._AMapSecurityConfig = {
+    securityJsCode: 'a3622540d19aa0d0f60f29382fe1bed2', // '「申请的安全密钥」',
+  }
+
+  // eslint-disable-next-line no-unused-vars
+  function initAMap(thisMap) {
+    AMapLoader.load({
+      key: 'fbab13713d865255a413cf1796a7cef7', // 申请好的Web端开发者Key，首次调用 load 时必填
+      version: '2.0', // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
+      plugins: [''], // 需要使用的的插件列表，如比例尺'AMap.Scale'等
+    })
+      .then((AMap) => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        thisMap = new AMap.Map('container', {
+          //设置地图容器id
+          viewMode: '3D', //是否为3D地图模式
+          zoom: 11, //初始化地图级别
+          center: [120.19, 30.26], //初始化地图中心点位置
+        })
+      })
+      .catch((e) => {
+        console.log(e)
+      })
+  }
+  function moveMap(thisMap) {
+    thisMap.setCenter([110,30])
+  }
+  export default {
+    props: ['locations'],
+    watch: {
+      'this.locations.lat'(newQuestion, oldQuestion) {
+        console.log('有效')
+      },
+    },
+    setup() {
+      const map = shallowRef(null)
+      return {
+        map,
+      }
+    },
+    mounted() {
+      //DOM初始化完成进行地图初始化
+      initAMap(this.map)
+      //从父组件获取地区中心
+      console.log('子组件')
+      console.log(this.location)
+    },
+  }
+</script>
+
+<style scoped>
+  #container {
+    padding: 10px;
+    margin: 0px;
+    width: 400px;
+    height: 400px;
+  }
+</style>

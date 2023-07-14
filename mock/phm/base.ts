@@ -8,12 +8,14 @@ const elevatorsList = [
     name: 'BBB大厦A座1号',
     needCheck: false,
     lastCheck: 1626832597790,
+    healthy: 40,
     location: [
       {
-        lon: 30.232322,
-        lat: 137.0,
+        lng: 120.162677,
+        lat: 30.270211,
       },
     ],
+    pairs: 100,
     repairerNumber: 10,
   },
   {
@@ -21,12 +23,14 @@ const elevatorsList = [
     name: 'BBB大厦A座2号',
     needCheck: false,
     lastCheck: 1626832597790,
+    healthy: 50,
     location: [
       {
-        lon: 30.232322,
-        lat: 137.0,
+        lng: 121.162677,
+        lat: 30.270211,
       },
     ],
+    pairs: 100,
     repairerNumber: 11,
   },
   {
@@ -34,12 +38,14 @@ const elevatorsList = [
     name: 'BBB大厦A座3号',
     needCheck: false,
     lastCheck: 1626832597790,
+    healthy: 80,
     location: [
       {
-        lon: 30.232322,
-        lat: 137.0,
+        lng: 120.162677,
+        lat: 31.270211,
       },
     ],
+    pairs: 100,
     repairerNumber: 12,
   },
 ]
@@ -50,7 +56,16 @@ export default [
     timeout: 1000,
     method: 'get',
     response: () => {
-      return resultSuccess(elevatorsList)
+      const baseList: any[] = []
+      for (const Item of elevatorsList) {
+        baseList.push({
+          id: Item.id,
+          name: Item.name,
+          lastCheck: Item.lastCheck,
+          healthy: Item.healthy,
+        })
+      }
+      return resultSuccess(baseList)
     },
   },
   {
@@ -59,6 +74,19 @@ export default [
     method: 'get',
     response: () => {
       return resultError()
+    },
+  },
+  {
+    url: '/basic-api/phm/detail',
+    timeout: 1000,
+    method: 'get',
+    response: ({ query }) => {
+      const ids = +query.id
+      const checkID = elevatorsList.find((item) => item.id === ids)
+      if (!checkID) {
+        return resultError('No Such ID!')
+      }
+      return resultSuccess(checkID)
     },
   },
 ] as MockMethod[]
