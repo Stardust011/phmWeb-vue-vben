@@ -21,11 +21,10 @@
       </template>
     </List>
     <!--抽屉区域-->
-
-    <!--弹窗区域-->
-    <Drawer :visible="show" :title="DrawerName" destroyOnClose @close="handleCancel">
+    <Drawer :width="width" :visible="show" :title="DrawerName" destroyOnClose @close="handleCancel">
       <ElevatorModel :id="elevatorID" />
     </Drawer>
+    <!--弹窗区域-->
 
     <!--以下为测试区域-->
     <a-button @click="showModel(11120, '00000000')">点击测试弹窗</a-button>
@@ -36,12 +35,18 @@
 <script lang="ts" setup>
   import { Card, List, ListItem, Alert, Drawer } from 'ant-design-vue'
   import { getElevatorsList, getElevatorsDetail } from '/@/api/phm/base'
-  import { onMounted, reactive, ref, nextTick } from 'vue'
+  import { onMounted, reactive, ref, nextTick, computed } from 'vue'
   import Healthiness from './components/Healthiness.vue'
   import ElevatorModel from './components/ElevatorModel.vue'
 
   const DrawerName = ref('1号电梯')
   const elevatorID = ref(-1)
+  const width = computed(() => {
+    if (document.body.clientWidth <= 425) {
+      return '100%'
+    } else if (document.body.clientWidth <= 768) return '80%'
+    else return '736px'
+  })
 
   function showModel(ids, name) {
     elevatorID.value = ids

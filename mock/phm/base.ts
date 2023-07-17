@@ -16,6 +16,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
+    url: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
     repairerNumber: 10,
   },
   {
@@ -31,6 +32,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
+    url: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
     repairerNumber: 11,
   },
   {
@@ -46,6 +48,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
+    url: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
     repairerNumber: 12,
   },
 ]
