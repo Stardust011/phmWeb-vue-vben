@@ -1,8 +1,5 @@
 <template>
   <!-- 抽屉内部 -->
-  <!--  <p>{{ id }}</p>-->
-  <!--  <p style="width: 600px">{{ detailRes }}</p>-->
-  <!--  <p>{{ detailRes }}</p>-->
   <!-- 表格区域 -->
   <DetailsDescription :data="detailRes[0]" />
   <!-- 视频区域 -->
