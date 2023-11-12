@@ -58,7 +58,9 @@ export const useUserStore = defineStore({
   },
   actions: {
     setToken(info: string | undefined) {
-      this.token = info ? info : '' // for null or undefined value
+      // add token prefix 'Bearer '
+      info = info ? 'Bearer ' + info : '' // for null or undefined value
+      this.token = info
       setAuthCache(TOKEN_KEY, info)
     },
     setRoleList(roleList: RoleEnum[]) {

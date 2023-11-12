@@ -45,6 +45,6 @@
   watch(detailRes, () => {
     location.lat = detailRes[0].location.lat
     location.lng = detailRes[0].location.lng
-    resSrc.value = detailRes[0].url
+    resSrc.value = detailRes[0].monitorUrl
   })
 </script>

@@ -14,7 +14,7 @@ const elevatorsList = [
       lat: 30.270211,
     },
     pairs: 100,
-    url: 'baidu.com',
+    monitorUrl: 'baidu.com',
     repairerNumber: 10,
   },
   {
@@ -30,7 +30,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
+    monitorUrl: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
     repairerNumber: 11,
   },
   {
@@ -46,7 +46,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
+    monitorUrl: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
     repairerNumber: 12,
   },
   {
@@ -62,7 +62,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -78,7 +78,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -94,7 +94,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -110,7 +110,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -126,7 +126,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -142,7 +142,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -158,7 +158,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -174,7 +174,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -190,7 +190,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -206,7 +206,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -222,7 +222,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -238,7 +238,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -254,7 +254,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -270,7 +270,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -286,7 +286,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -302,7 +302,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -318,7 +318,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
   {
@@ -334,7 +334,7 @@ const elevatorsList = [
       },
     ],
     pairs: 100,
-    url: '',
+    monitorUrl: '',
     repairerNumber: 10,
   },
 ]
@@ -376,6 +376,8 @@ export default [
       if (!checkID) {
         return resultError('No Such ID!')
       }
+      checkID.monitorUrl =
+        'https://vdn6.vzuu.com/HD/54a9232c-f906-11ed-90b1-a254f9a0acd1-v8_f2_t1_OXyW7IGm.mp4?pkey=AAVNxPIpN5D20X8GIhPoTQmFqpfG5uroEwd_dk4MFKMZwVySTH-ewakXgTSgzD1Vdo_UHF4e1kRgyBQsB0Wy7wMt&bu=1513c7c2&c=avc.8.0&expiration=1699796509&f=mp4&pu=1513c7c2&v=ks6&pp=ChMxNDAxNjIzODY1NzM5NTc5MzkyGGMiC2ZlZWRfY2hvaWNlMhMxMzY5MDA1NjA4NTk5OTA0MjU3PXu830Q%3D&pf=Web&pt=zhihu'
       return resultSuccess(checkID)
     },
   },

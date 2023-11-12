@@ -78,6 +78,8 @@
   import { useUserStore } from '/@/store/modules/user'
   import { LoginStateEnum, useLoginState, useFormRules, useFormValid } from './useLogin'
   import { useDesign } from '/@/hooks/web/useDesign'
+
+  import { SHA3, enc } from 'crypto-js'
   //import { onKeyStroke } from '@vueuse/core';
 
   const ACol = Col
@@ -113,7 +115,7 @@
     try {
       loading.value = true
       const userInfo = await userStore.login({
-        password: data.password,
+        password: SHA3(data.password).toString(enc.Base64), //SHA3-512 Base64编码
         username: data.account,
         mode: 'none', //不要默认的错误提示
       })
