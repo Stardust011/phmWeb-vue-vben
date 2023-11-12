@@ -9,14 +9,12 @@ const elevatorsList = [
     needCheck: false,
     lastCheck: 1626832597790,
     healthy: 40,
-    location: [
-      {
-        lng: 120.162677,
-        lat: 30.270211,
-      },
-    ],
+    location: {
+      lng: 120.162677,
+      lat: 30.270211,
+    },
     pairs: 100,
-    url: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
+    url: 'baidu.com',
     repairerNumber: 10,
   },
   {
@@ -51,6 +49,294 @@ const elevatorsList = [
     url: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4',
     repairerNumber: 12,
   },
+  {
+    id: 4,
+    name: 'BBB大厦A座4号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 5,
+    name: 'BBB大厦A座5号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 6,
+    name: 'BBB大厦A座6号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 7,
+    name: 'BBB大厦A座7号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 8,
+    name: 'BBB大厦A座8号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 9,
+    name: 'BBB大厦A座9号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 10,
+    name: 'BBB大厦A座10号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 11,
+    name: 'BBB大厦A座11号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 12,
+    name: 'BBB大厦A座12号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 13,
+    name: 'BBB大厦A座13号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 14,
+    name: 'BBB大厦A座14号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 15,
+    name: 'BBB大厦A座15号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 16,
+    name: 'BBB大厦A座16号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 17,
+    name: 'BBB大厦A座17号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 18,
+    name: 'BBB大厦A座18号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 19,
+    name: 'BBB大厦A座19号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 20,
+    name: 'BBB大厦A座20号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
+  {
+    id: 21,
+    name: 'BBB大厦A座21号',
+    needCheck: false,
+    lastCheck: 1626832597790,
+    healthy: 40,
+    location: [
+      {
+        lng: 120.162677,
+        lat: 30.270211,
+      },
+    ],
+    pairs: 100,
+    url: '',
+    repairerNumber: 10,
+  },
 ]
 
 export default [
@@ -64,8 +350,9 @@ export default [
         baseList.push({
           id: Item.id,
           name: Item.name,
-          lastCheck: Item.lastCheck,
-          healthy: Item.healthy,
+          lastCheck: Item.lastCheck + Math.floor(Math.random() * 5000000000),
+          // healthy: Item.healthy,
+          healthy: Math.floor(Math.random() * 600 + 400) / 10,
         })
       }
       return resultSuccess(baseList)

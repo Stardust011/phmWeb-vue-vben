@@ -2,12 +2,15 @@
   <!-- 抽屉内部 -->
   <!-- 表格区域 -->
   <DetailsDescription :data="detailRes[0]" />
+  <!-- 表格区域结束 -->
   <!-- 视频区域 -->
   <Divider>实时监控</Divider>
   <VideoPlayer :resSrc="resSrc" />
+  <!-- 视频区域结束 -->
   <!-- 地图区域 -->
   <Divider />
   <MapContainer :lat="location.lat" :lng="location.lng" :locations="location" />
+  <!-- 地图区域结束 -->
 </template>
 
 <script lang="ts" setup>
@@ -40,8 +43,8 @@
     defGetDetail()
   })
   watch(detailRes, () => {
-    location.lat = detailRes[0].location[0].lat
-    location.lng = detailRes[0].location[0].lng
+    location.lat = detailRes[0].location.lat
+    location.lng = detailRes[0].location.lng
     resSrc.value = detailRes[0].url
   })
 </script>
